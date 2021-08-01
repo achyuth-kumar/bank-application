@@ -29,7 +29,7 @@ app.use('/', api)
 
 const PORT=process.env.PORT ||4200;
 //const port = 4200
-if(process.env.NODE_ENV==='prduction') {
+if(process.env.NODE_ENV==='production') {
     app.use(express.static('bank/build'));
 }
 
