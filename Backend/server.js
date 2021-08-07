@@ -19,16 +19,15 @@ app.use(express.urlencoded({ extended: false }))
 app.use('/', api)
 
 //serve static assets
-if(process.env.NODE_ENV==='production') {
-app.use(express.static('bank/my-app/public/index.html'));
-app.get('*',(req,res)=>{
-res.sendFile(path.resolve(__dirname,'bank','my-app','public','index.html'));
-});
-}
+// if (process.env.NODE_ENV === 'production') {
+    app.use(express.static('Backend/client/build'));
+    app.get('*', (req, res) => {
+        res.sendFile(path.join(__dirname='Backend/client/build/index.html'));
+    })
+// }
 
 
-const PORT=process.env.PORT ||4200;
-//const port = 4200
+const PORT=process.env.PORT ||3000;
 if(process.env.NODE_ENV==='production') {
     app.use(express.static('bank/build'));
 }
