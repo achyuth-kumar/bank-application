@@ -9,10 +9,9 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "install-bank":"cd bank && npm install",
     "heroku-postbuild":"npm run install-bank && npm run build",
     "start":"nodemon Backend/server.js",
-    "bank":"cd bank && npm start",
+    "server":"nodemon Backend/server.js",
     "review": "node node_modules/elevation-pr/index.js"
   },
   "repository": {
