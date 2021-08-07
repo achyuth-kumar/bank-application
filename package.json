@@ -1,8 +1,11 @@
 {
   "name": "bank",
   "version": "1.0.0",
-  "node": ">=14.17.1",
   "description": "",
+  "engines":{
+    "node": "14.17.1",
+    "npm":"7.19.0",
+  },
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
