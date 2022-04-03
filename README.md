@@ -1,4 +1,4 @@
-# BANK Project 🤑
+# BANK Project
 <img src="https://www.pngitem.com/pimgs/m/531-5313478_bank-clipart-transparent-background-vector-bank-icon-png.png" alt="Bank logo" width="50%" style="margin: 0 auto;" />
 
 It is a Full Stack **MERN** project, that displays, add, and delete the user's transactions (Deposit or Withdraw).
